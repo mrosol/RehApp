@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+
+    <TextView
+            android:text="Pulse:"
+            android:textSize="28dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pulseText" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"/>
+    <TextView
+            android:text="Systolic pressure:"
+            android:textSize="28dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sysPressText" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/pulseText"/>
+    <TextView
+            android:text="Diastolic pressure:"
+            android:textSize="28dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/diasPressText"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/sysPressText"/>
+    <TextView
+            android:text="Temperature:"
+            android:textSize="28dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tempText" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/diasPressText" android:layout_marginTop="8dp"/>
+    <TextView
+            android:text=""
+            android:gravity="center"
+            android:textSize="28dp"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/pulseTextView"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="8dp"
+            app:layout_constraintStart_toEndOf="@+id/pulseText" android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.826"/>
+    <TextView
+            android:text=""
+            android:gravity="center"
+            android:textSize="28dp"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/sysPressTextView" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="43dp" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/pulseTextView"/>
+    <TextView
+            android:text=""
+            android:gravity="center"
+            android:textSize="28dp"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/diasPressTextView" app:layout_constraintStart_toEndOf="@+id/diasPressText"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintHorizontal_bias="0.583" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/sysPressTextView"/>
+    <TextView
+            android:text=""
+            android:gravity="center"
+            android:textSize="28dp"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tempTextView" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/diasPressTextView" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="43dp"/>
+</android.support.constraint.ConstraintLayout>
